@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Age</title>
+  <!-- Font Awesome -->
+   <link rel="stylesheet" href="css/all.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <!-- CSS Style -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Normaliztion -->
+     <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  <h1>Age Calculatino Program</h1>
+  <div class="container">
+    <span class="ESpan">Enter Your Date ..</span>
+    <div class="date">
+      <div>
+        <div class="inputs">
+          <input type="text" placeholder="Years" id="yearinput" value="2003">
+          <input type="text" placeholder="Month" id="month">
+          <input type="text" placeholder="Day" id="day">
+        </div>
+        <div class="btns">
+          <button onclick="calculate()">Next</button>
+          <button onclick="clear()">Clear</button>
+        </div>
+      </div>
+    </div>
+    <h2>Age Calculatino By</h2>
+    <div class="dyears">
+      <span>Years</span>
+      <input id="inputOutYear" type="text">
+    </div>
+    <div class="dmonth">
+      <span>Month</span>
+      <span>3</span>
+    </div>
+    <div class="ddays">
+      <span>Days</span>
+      <span>13</span>
+    </div>
+    <div>
+      <h2>Age Breakdown By Time Units</h2>
+    </div>
+    <div class="dhours">
+      <span>Hours</span>
+      <span>37392</span>
+    </div>
+    <div class="dmunties">
+      <span>Muniets</span>
+      <span>37333392</span>
+    </div>
+    <div class="dseconds">
+      <span>Seconds</span>
+      <span>3739399392</span>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

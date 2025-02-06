@@ -1,0 +1,315 @@
+/* Start Global Ruls */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .3s;
+}
+:root {
+  --White-color: #fff;
+  --main-color: #2196f3;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#close-links {
+  display: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+  /* End Global Ruls */
+  /* Start Header */
+  .header {
+    height: 75px;
+  }
+  .header .container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .header .logo img {
+    width: 30px;
+  }
+  .header .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    }
+    .header ul {
+    position: absolute;
+    background-color: var(--White-color);
+    right: 0;
+    top: 50px;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 0px #dcdcdc;
+    margin-top: -20px;
+    opacity: 0;
+    z-index: 100;
+  }
+    .header ul a {
+      display: block;
+      padding: 20px 10px;
+      color: #333;
+      transition: .3s;
+      border-bottom: 1px solid #d4d4d4;
+    }
+    .header ul li:last-child > a {
+      border-bottom: none;
+    }
+    .header ul a:hover {
+      color: var(--main-color);
+      margin-left: 10px;
+    }
+  
+  
+  
+  
+  /* End Dark Mode */
+  /* Start Home-page */
+  .Home-page {
+    /* background-color: #eee; */
+    height: calc(100vh - 75px);
+  }
+  .Home-page .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .Home-page .image {
+    width: 250px;
+    height: 250px;
+    margin-top: -15px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+.Home-page .image img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .Home-page .image:hover img {
+    transform: scale(1.05);
+  }
+  .Home-page span {
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #555;
+  }
+  .Home-page h1 {
+    margin: -10px 0 0 0;
+    padding: 0 0 5px;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .Home-page p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  .Home-page .btns button {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    margin: 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .Home-page .btns button:first-child {
+    background-color: var(--White-color);
+    border: 1px solid #555;
+  }
+  .Home-page .btns button:first-child:hover {  
+    background-color: #555;
+    color: var(--White-color);
+  }
+  .Home-page .btns button:last-child {
+    background-color: #555;
+    color: var(--White-color);
+  }
+  .Home-page .btns button:last-child:hover {
+    background-color: black;
+  }
+  .Home-page .icons {
+  }
+  .Home-page .icons i {
+    font-size: 25px;
+    color: var(--White-color);
+    padding: 5px;
+    margin:10px;
+    border-radius: 50%;
+    background-color: #EEE;
+  }
+  .Home-page .icons a:first-child > i {
+    color: #000000;
+  }
+  .Home-page .icons a:nth-child(2) > i{
+    color: #0073b1;
+  }
+  .Home-page .icons a:nth-child(3) > i {
+    color: #b54332;
+  }
+  .Home-page .icons a:last-child > i {
+    color: #27d62d;
+    background-color: #fff;
+    font-size: 20px;
+  }
+  @media (max-width: 650px) {
+    .Home-page .image {
+      width: 150px;
+      height: 150px;
+    }
+    .Home-page h1 {
+      font-size: 2rem;
+    }
+  }
+  /* End Home-page */
+  /* Start About */
+  .about {
+    margin-top: 50px;
+  }
+  .about .container {
+    text-align: center;
+    padding: 20px;
+  }
+  .about p {
+    color: #555;
+    padding: 10px;
+  }
+  .about h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .parent {
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  @media (max-width: 650px) {
+    .Home-page .image {
+      margin-top: 60px;
+    }
+    .Home-page .btns {
+      margin-top: 40px;
+    }
+    .Home-page .icons {
+      margin-top: 40px;
+    }
+    .parent {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  .box {
+    border: 1px solid #555;
+    border-radius: 30px;
+    padding: 20px;
+  }
+  .about .box i {
+    font-size: 2rem;
+  }
+  .about .box h6 {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+  .about .container p:last-child {
+    line-height: 1.4;
+  }
+  /* End About */
+  /* Start Experience */
+  .Experience .container {
+    text-align: center;
+    padding: 20px;
+  }
+  .Experience p {
+    color: #555;
+    padding: 10px;
+  }
+  .Experience h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .Experience .box {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Experience .box h3 {
+    font-size: 2rem;
+    margin: 0 0 32px;
+    color: #555;
+  }
+  .Experience .box .skill {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 160px;
+  }
+  .Experience .text {
+    text-align: start;
+    width: 70%;
+  }
+  .Experience .text p {
+    padding-left: 0;
+  }
+  .Experience .box img {
+    width: 32px;
+
+  }
+  .Experience .box h4 {
+    font-size: 16px;
+  }
+  /* End Experience */
+  /* Start Projects */
+  .projects {
+  }
+  .projects .container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 30px;
+  }
+  .projects .box {
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    border-color: #a9a9a9;
+  }
+  .projects .box .image {
+    width: 80%;
+    border-radius: 20px;
+  }
+  .projects .box .image img {
+    width: 100%;
+    border-radius: 32px;
+  }
+  /* End Projects */

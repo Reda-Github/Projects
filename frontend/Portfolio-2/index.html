@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="css/master.css">
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Font Awesome [icons] -->
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <link rel="icon" href=
+"images/main_icon.png"
+        type="image/x-icon" />
+</head>
+<body id="body">
+  <!-- Start Header -->
+  <div class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/main_icon.png" alt="">
+      </div>
+      <div class="links">
+        <div class="icon">
+          <i onclick="openLinks()" id="open-links" class="fa-solid fa-bars"></i>
+          <i  onclick="closeLinks()" id="close-links" class="fa-solid fa-xmark"></i>
+          <ul id="ul">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+  <!-- Start Home-page -->
+  <div class="Home-page">
+    <div class="container">
+      <dim class="image">
+        <img src="images/Me-4.jpg" alt="">
+      </dim>
+      <span>Hello, I'm</span>
+      <h1>Reda Gaber</h1>
+      <p>Full Stack Developer</p>
+      <div class="btns">
+        <button>Download CV</button>
+        <button>Contact Info</button>
+      </div>
+      <div class="icons">
+        <a href="https://github.com/Reda-Github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/reda-jaber-3875b6325/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto: mr.reda.jaber@gmail.com">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="tel:+201201371335">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+<!-- Start About -->
+<div id="about" class="about">
+  <div class="container">
+    <p>Get To Know More</p>
+    <h2>About Me</h2>
+    <div class="parent">
+      <div class="box box-1">
+        <i class="fa-solid fa-award"></i>
+        <h6>Experience</h6>
+        <p>1 years</p>
+        <p>Full stack Development</p>
+      </div>
+      
+      <div class="box box-2">
+        <i class="fa-solid fa-school-flag"></i>
+        <h6>Education</h6>
+        <p>
+          Bachelor of Information Systems</p>
+      </div>
+      
+    </div>
+    <p>Hi there! I'm a passionate Full Stack Developer with a background in creating dynamic and responsive web applications. My expertise lies in leveraging modern technologies</p>
+  </div>
+</div>
+<!-- End About -->
+<!-- Start Experience -->
+<div id="Experience" class="Experience">
+  <div class="container">
+    <p>Explore My</p>
+    <h2>Experience</h2>
+    <div class="parent">
+      <div class="box box-1">
+        <h3>Front-End Development</h3>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>HTML</h4>
+            <p>Experienced</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>CSS</h4>
+            <p>Experienced</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>JS</h4>
+            <p>Experienced</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>Bootstrap</h4>
+            <p>Experienced</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="box box-2">
+        <h3>Back-End Development</h3>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>Node JS</h4>
+            <p>Basic</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>Express JS</h4>
+            <p>Basic</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>My SQL</h4>
+            <p>Basic</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="images/checkmark.png" alt="img.icon">
+          <div class="text">
+            <h4>Git&Github</h4>
+            <p>Experienced</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Experience -->
+<!-- Start Projects-->
+<div class="projects">
+  <div class="container">
+    <div class="box">
+      <div class="image">
+        <img src="images/template-2.avif" alt="">
+      </div>
+      <h4>Project One</h4>
+      <div class="btns">
+        <button>Github</button>
+        <button>Live Demo</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/template-1.avif" alt="">
+      </div>
+      <h4>Project Two</h4>
+      <div class="btns">
+        <button>Github</button>
+        <button>Live Demo</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/template-3.avif" alt="">
+      </div>
+      <h4>Project Three</h4>
+      <div class="btns">
+        <button>Github</button>
+        <button>Live Demo</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Projects-->
+<script src="JS/mainScript.js"></script>
+</body>
+</html>
